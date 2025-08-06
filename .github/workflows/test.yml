@@ -1,1 +1,10 @@
-name: test name 
+name : first workflow
+
+on : workflow_dispatch
+
+jobs : 
+  test_job :
+    runs-on : ubuntu-latest
+    steps :
+      -name : echo hello world
+      run : echo "hello world"
