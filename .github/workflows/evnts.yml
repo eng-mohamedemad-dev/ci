@@ -1,0 +1,14 @@
+name : events
+on : push
+jobs :
+  test_job : 
+   runs-on : ubuntu-latest
+   steps :
+      - name : echo hello world
+        run : echo "hello world"
+      - name : pwd
+        run : pwd
+      - name : list files
+        run : ls -la
+      - name : print current date
+        run : date
